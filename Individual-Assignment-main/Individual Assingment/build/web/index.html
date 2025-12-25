@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body{
+            align-items: center;
+            background-color: #123;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            padding: 10vh;
+        }
+        
+        .container {
+            background-color: #15172b;
+            border-radius: 20px;
+            box-sizing: border-box;
+            height: 840px;
+            padding: 30px;
+            width: 620px;
+}
+
+h1{
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    
+}
+
+label{
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+    margin-bottom: 10px;
+
+    display: flex;
+}
+
+input{
+      height: 45px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+     padding: 4px 20px 0;
+     text-color: white;
+     color: #eee;
+     font-family: sans-serif;
+     font-size: 16px;
+     align-content: center;
+
+}
+
+
+textarea{
+      height: 150px;
+  position: relative;
+  width: 100%;
+  margin-bottom: -10px;
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+     padding: 4px 20px 0;
+       color: #eee;
+     font-family: sans-serif;
+}
+.buttonSub{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+button {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 50%;
+
+}
+
+#view{
+    text-decoration: none;
+    color:white;
+    
+}
+
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Personal Profile</h1>
+        <form action="profile" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required>
+            </div>
+
+            <div class="form-group">
+                <label for="program">Program:</label>
+                <input type="text" id="program" name="program" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies (Comma Separated):</label>
+                <input type="text" id="hobbies" name="hobbies">
+            </div>
+
+            <div class="form-group">
+                <label for="selfIntro">Short Self-Introduction:</label>
+                <textarea id="selfIntro" name="selfIntro" rows="4" required></textarea>
+            </div>
+            <div class="buttonSub">
+            <button type="submit">Submit Profile</button>
+            <button id="view"><a href="viewProfile.jsp">View Profile</a></button>
+
+            </div>
+            
+
+        </form>
+    </div>
+</body>
+</html>
